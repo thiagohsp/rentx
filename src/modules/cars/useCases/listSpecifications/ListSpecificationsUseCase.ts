@@ -1,10 +1,10 @@
-import { Category } from "../../model/Category";
+import { Specification } from "../../entities/Specification";
 import { ISpecificationsRepository } from "../../repositories/ISpecificationsRepository";
 
 class ListSpecificationsUseCase {
   constructor(private specificationsRepository: ISpecificationsRepository) {}
 
-  execute(): Category[] {
+  async execute(): Promise<Specification[]> {
     return this.specificationsRepository.list();
   }
 }
