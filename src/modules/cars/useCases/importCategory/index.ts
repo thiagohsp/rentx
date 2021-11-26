@@ -8,7 +8,6 @@ export default () => {
   const importCategoryController = new ImportCategoryController(
     importCategoryUseCase
   );
-  
-  return importCategoryController;
-}
 
+  return importCategoryController;
+};
