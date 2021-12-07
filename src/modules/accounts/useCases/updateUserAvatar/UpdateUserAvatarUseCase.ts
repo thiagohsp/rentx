@@ -1,7 +1,7 @@
-import { inject, injectable } from "tsyringe";
+import { injectable, inject } from "tsyringe";
 
-import { deleteFile } from "../../../../utils/file";
-import { IUsersRepository } from "../../repositories/IUserRepository";
+import { IUsersRepository } from "@modules/accounts/repositories/IUserRepository";
+import { deleteFile } from "@utils/file";
 
 interface IUpdateUserAvatarRequest {
   user_id: string;
